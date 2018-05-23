@@ -3,7 +3,7 @@ console.log("external JS");
 
 //task 2
 
-function sumArray(arr) {
+function arrSum(arr) {
   var sum=0;
         arr.forEach(function(value, index){
           sum+=value;
@@ -12,19 +12,19 @@ function sumArray(arr) {
         return sum;
         }
 
-        console.log(sumArray([1,2,3,4,5]));
-        console.log(sumArray([19,-2,30,-45]));
+        console.log(arrSum([1,2,3,4,5]));
+        console.log(arrSum([19,-2,30,-45]));
 
 //Task 3
 
-function checkEmail(emailString){
-  var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-  var match = emailFormat.test(emailString);
+function checkingEmail(emailString){
+  var formatofEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  var match = formatofEmail.test(emailString);
   return match;
 }
 
-console.log(checkEmail("john@smith.com"));
-console.log(checkEmail("johnsmith.info"));
+console.log(checkingEmail("john@smith.com"));
+console.log(checkingEmail("johnsmith.info"));
 
 //Task 4
 
@@ -45,11 +45,30 @@ var library = [
        readingStatus: false
    }];
 
-function getReadingStatus(index){
+function getreadingStatus(index){
   return library[index].readingStatus;
 }
 
-console.log(getReadingStatus(2));
+console.log(getreadingStatus(2));
+
+
+//task5
+var cart = [ 
+   {
+       name: 'Shoes',
+       price: 560,
+       quantity: 4
+   },
+   {
+       name: 'Regular Tees',
+       price: 455.50,
+       quantity: 6
+   },
+   {
+       name: 'Socks',
+       price: 65.99,
+       quantity: 2
+   }];
 
 //Task 5
 
